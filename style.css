@@ -1,0 +1,146 @@
+body {
+    font-family: 'Bungee', sans-serif;
+}
+
+a {
+    color: midnightblue;
+}
+
+a:hover {
+    color: rgb(255, 102, 102);
+}
+
+
+/*Header*/
+
+.navbar {
+    text-transform: uppercase;
+}
+
+.navbar-brand {
+    font-family: 'Bungee', cursive;
+    font-size: 2.5rem;
+    line-height: 2.3rem;
+    color: white;
+}
+
+.nav-item {
+    font-size: 2rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+/*Main*/
+
+.hero {
+    position: relative;
+}
+
+.hero-text {
+    position: fixed;
+    top: 70%;
+    left: 45%;
+    width: 55rem;
+    transform: translate(-50%, -100%);
+    color: rgb(0, 132, 255);
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    padding-left: 5rem;
+    padding-right: 10rem;
+}
+
+.btn-main {
+    color: white;
+    background-color: rgb(0, 162, 255);
+    font-size: 1.2rem;
+    font-weight: 550;
+}
+
+.btn-main:hover {
+    background-color: white;
+    color: rgb(0, 162, 255);
+}
+
+
+/*Programming Paths*/
+
+.pp-background {
+    background-color: rgb(210, 255, 255);
+    border-top: 5px solid white;
+}
+
+.section-heading {
+    color: rgb(0, 162, 255);
+    text-shadow: 1px 1px black;
+}
+
+.sub {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.details {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.7rem;
+}
+
+
+/*Team*/
+
+.team-background {
+    background-color: rgb(220, 252, 227);
+    border-top: 5px solid white;
+}
+
+.section-heading-team {
+    color: rgb(1, 196, 121);
+    text-shadow: 1px 1px black;
+}
+
+
+/*Sign Up*/
+
+.signup-background {
+    background-color: rgb(255, 169, 154);
+    border-top: 5px solid white;
+}
+
+.letter {
+    font-family: monospace;
+    padding-left: 15px;
+    font-size: 1.5rem;
+    text-indent: 3rem;
+    line-height: 2.2rem;
+}
+
+.btn-main-end {
+    color: white;
+    background-color: rgb(255, 0, 0);
+    font-size: 1.2rem;
+    font-weight: 550;
+    width: 15rem;
+    float: right;
+}
+
+.btn-main-end:hover {
+    background-color: white;
+    color: rgb(255, 0, 0);
+}
+
+
+/*Footer*/
+
+footer {
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: 'Quicksand', sans-serif;
+    background-color: white;
+}
+
+.attribution {
+    font-family: 'Quicksand', sans-serif;
+    color: gray;
+    opacity: 0.5;
+    line-height: 0.1rem;
+}
