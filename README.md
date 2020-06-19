@@ -1,1 +1,1 @@
-https://coderproject.github.io/.
+The Everyday Coder Project website.
