@@ -101,6 +101,11 @@ a:hover {
 
 /*Sign Up*/
 
+#letter {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.6rem;
+}
+
 .signup-background {
     background-color: rgb(255, 169, 154);
     border-top: 5px solid white;
@@ -120,7 +125,6 @@ a:hover {
     font-size: 1.2rem;
     font-weight: 550;
     width: 15rem;
-    float: right;
 }
 
 .btn-main-end:hover {
