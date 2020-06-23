@@ -33,6 +33,18 @@ html {
     background-size: cover;
 }
 
+@media only screen and (max-width: 1000px) {
+    .disappear {
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .appear {
+        visibility: visible;
+    }
+}
+
 
 /*Header*/
 
