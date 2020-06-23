@@ -10,6 +10,29 @@ a:hover {
     color: rgb(255, 102, 102);
 }
 
+body,
+html {
+    height: 100%;
+}
+
+.parallax {
+    background-image: url("tecp-images/liquid.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 {
+    background-image: url("tecp-images/me.JPG");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 /*Header*/
 
@@ -37,7 +60,7 @@ a:hover {
 }
 
 .hero-text {
-    position: fixed;
+    position: absolute;
     top: 70%;
     left: 45%;
     width: 55rem;
@@ -47,6 +70,20 @@ a:hover {
     padding-bottom: 4rem;
     padding-left: 5rem;
     padding-right: 10rem;
+}
+
+.fade {
+    animation: fadeIn ease 0.7s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .btn-main {
@@ -61,6 +98,36 @@ a:hover {
     color: rgb(0, 162, 255);
 }
 
+.typewriter {
+    opacity: 0;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0;
+    animation: typing 4s steps(45, end), blink-caret .8s step-end infinite;
+    animation-delay: 0.7s;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+        opacity: 1;
+        border-color: transparent;
+    }
+    50% {
+        border-color: SmokyWhite;
+    }
+}
+
 
 /*Programming Paths*/
 
@@ -71,7 +138,6 @@ a:hover {
 
 .section-heading {
     color: rgb(0, 162, 255);
-    text-shadow: 1px 1px black;
 }
 
 .sub {
@@ -95,7 +161,6 @@ a:hover {
 
 .section-heading-team {
     color: rgb(1, 196, 121);
-    text-shadow: 1px 1px black;
 }
 
 

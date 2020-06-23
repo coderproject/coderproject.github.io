@@ -1,0 +1,103 @@
+a {
+    color: lightblue;
+    font-weight: 900;
+}
+
+a:hover {
+    color: aqua;
+}
+
+body {
+    background-color: #410707;
+}
+
+.fade {
+    animation: fadeIn ease 0.7s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+li {
+    font-size: 1.8rem;
+}
+
+
+/*Header*/
+
+.nav-item {
+    font-family: "Quicksand", sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: lightcoral;
+    background-color: black;
+}
+
+.navbar a {
+    color: lightsalmon;
+}
+
+.active {
+    font-weight: 100;
+}
+
+.navbar-brand {
+    position: absolute;
+    left: -1.8em;
+    top: 1.7em;
+    font-size: 16px;
+    font-size: 8.7vmax;
+    font-family: 'UnifrakturMaguntia', cursive;
+    transform: rotate(-83deg);
+    word-spacing: -0.15em;
+    line-height: 1em;
+    margin-top: -0.2em;
+    margin-left: 0.2em;
+    animation-delay: 1s;
+    background-color: transparent;
+    color: goldenrod;
+}
+
+.navbar-brand2 {
+    color: white;
+    position: absolute;
+    left: -1.5em;
+    top: 1.7em;
+    font-size: 16px;
+    font-size: 10vmax;
+    font-family: 'Londrina Outline', cursive;
+    transform: rotate(80deg);
+    word-spacing: -0.15em;
+    line-height: 1em;
+    margin-top: -0.2em;
+    margin-left: 0.2em;
+    animation-delay: 0.5s;
+}
+
+
+/*Main*/
+
+main {
+    font-family: 'IBM Plex Sans', sans-serif;
+    position: absolute;
+    margin-top: 8em;
+    margin-left: 30%;
+    text-transform: uppercase;
+}
+
+
+/*Footer*/
+
+footer {
+    font-family: 'Quicksand', sans-serif;
+    position: absolute;
+    right: 0;
+    top: 107%;
+}
