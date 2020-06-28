@@ -10,7 +10,7 @@
     <title>TECProject</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_index.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
@@ -22,13 +22,9 @@
 <body>
 
     <!--Header-->
-
     <nav id="header" class="fixed-top navbar navbar-expand-lg">
-
         <div class="container p-2">
-
             <a id="shadow" class="navbar-brand typewriter" href="index.html">The Everyday <br> Coder Project</a>
-
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li id="nav" class="nav-item">
@@ -49,10 +45,10 @@
     <main>
         <section class="hero">
             <img class="img-fluid" src="tecp-images/liquid.jpg" alt="" style="min-width: 1200px">
-            <div id="main-scroll" class="hero-text disappear">
+            <div id="main-scroll" class="hero-text disappear pop">
                 <h1 class="fade" style="text-shadow: 2px 2px white; animation-delay: 1.5s;">Welcome to the Everyday Coder Project!</h1>
                 <h6 class="typewriter" style="animation-delay: 2s;">Code the future with us.</h6>
-                <a class="btn btn-main mt-1 fade" style="width:20%; float:right; animation-delay: 3.8s;" href="#">Sign Up</a>
+                <a class="btn btn-main mt-1 fade" style="width:20%; float:right; animation-delay: 3.8s;" href="signup.html">Sign Up</a>
             </div>
         </section>
     </main>
@@ -86,14 +82,13 @@
     </section>
 
     <!--Team-->
-
     <section class="team-background py-5">
         <div class="container">
             <h2 class="section-heading-team">The Team</h2>
             <div class="row my-3">
                 <div class="col-md-4">
-                    <article class="shadow p-0" style="background-color: whitesmoke">
-                        <img class="img-fluid" alt="" src="tecp-images/me.JPG">
+                    <article class="shadow p-0" style="background-color: whitesmoke; border-top:0.3em solid black; border-bottom:0.3em solid black">
+                        <img class="img-fluid" alt="" src="tecp-images/me.JPG" style="border-bottom:0.7em solid slategray">
                         <div class="sub p-3">
                             <h3>Pranav Pradeep</h3>
                             <p>Founder of TECP. <br> //</p>
@@ -106,8 +101,8 @@
                     </article>
                 </div>
                 <div class="col-md-4">
-                    <article class="shadow p-0" style="background-color: whitesmoke">
-                        <img class="img-fluid" style="height: 18rem" alt="" src="tecp-images/propic.png">
+                    <article class="shadow p-0" style="background-color: whitesmoke; border-top:0.3em solid black; border-bottom:0.3em solid black">
+                        <img class="img-fluid" alt="" src="tecp-images/propic.png" style="border-bottom:0.7em solid slategray">
                         <div class="sub p-3">
                             <h3>//</h3>
                             <p>//</p> <br>
@@ -120,8 +115,8 @@
                     </article>
                 </div>
                 <div class="col-md-4">
-                    <article class="shadow p-0" style="background-color: whitesmoke">
-                        <img class="img-fluid" style="height: 18rem" alt="" src="tecp-images/propic.png">
+                    <article class="shadow p-0" style="background-color: whitesmoke; border-top:0.3em solid black; border-bottom:0.3em solid black">
+                        <img class="img-fluid" alt="" src="tecp-images/propic.png" style="border-bottom:0.7em solid slategray">
                         <div class="sub p-3">
                             <h3>//</h3>
                             <p>//</p> <br>
@@ -137,8 +132,9 @@
         </div>
     </section>
 
-    <!--Sign Up-->
+    <div class="parallax"></div>
 
+    <!--Sign Up-->
     <section class="signup-background py-5">
         <div class="container">
             <h2>Join Us!</h2>
@@ -160,7 +156,6 @@
     </section>
 
     <!--Footer-->
-
     <footer>
         <nav class="navbar navbar-light mt-3">
             <container class="display-1" style="list-style-type:none; font-size:1.3rem; line-height:27px">
@@ -191,8 +186,8 @@
         }
 
         function handleScroll() {
-            if (document.documentElement.scrollTop > 75) {
-                document.getElementById("header").style.backgroundColor = "rgba(255, 255, 255, 0.4)";
+            if (document.documentElement.scrollTop > 35) {
+                document.getElementById("header").style.backgroundColor = "rgba(255, 255, 255, 0.5)";
                 document.getElementById("shadow").style.textShadow = "1px 1px black";
                 document.getElementById("main-scroll").style.position = "absolute";
             } else {
@@ -205,7 +200,7 @@
 
     <script>
         var i = 0;
-        var txt = "As college students, we have lived the sweet journey of trying to learn something new as a kid and steadily turning it into the hand-made reality of today. As we direct this passion to other outlets, we found that teaching programming for free is the project we've been looking for. This is The Everyday Coder Project, where our endless interest of coding will be passed on to the future of programming. Code the future with us, Pranav Pradeep, Founder";
+        var txt = "As college students, we have lived the sweet journey of trying to learn something new as a kid and steadily turning it into the hand-made reality of today. As we direct this passion to other outlets, we found that teaching programming for free is the project we've been looking for. This is The Everyday Coder Project, where our endless interest of coding will be passed on to the future of programming. Code the future with us-- Pranav Pradeep, Founder";
         var speed = 40;
 
         function typeWriter() {
