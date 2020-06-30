@@ -1,0 +1,65 @@
+body {
+    font-family: 'Bungee', sans-serif;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: rgb(22, 187, 187);
+}
+
+body,
+html {
+    height: 100%;
+}
+
+img {
+    min-width: 1200px;
+    top: 0;
+    left: 0
+}
+
+
+/*Header*/
+
+.navbar {
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.514);
+}
+
+.navbar-brand {
+    font-family: 'Bungee', cursive;
+    font-size: 2.5rem;
+    line-height: 2.3rem;
+    color: black;
+}
+
+.nav-item {
+    font-size: 2rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+/*Main*/
+
+main {
+    position: absolute;
+    margin-top: -58%;
+    margin-bottom: 5%;
+    margin-left: 18%;
+    margin-right: 22%;
+    padding: 1em;
+    height: 100%;
+}
+
+
+/*Footer*/
+
+footer {
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: 'Quicksand', sans-serif;
+    background-color: white;
+}

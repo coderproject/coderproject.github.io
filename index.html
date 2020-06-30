@@ -10,7 +10,7 @@
     <title>TECProject</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="style_index.css">
+    <link rel="stylesheet" href="index_style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
@@ -24,17 +24,31 @@
     <!--Header-->
     <nav id="header" class="fixed-top navbar navbar-expand-lg">
         <div class="container p-2">
-            <a id="shadow" class="navbar-brand typewriter" href="index.html">The Everyday <br> Coder Project</a>
+            <table>
+                <tr>
+                    <th>
+                        <a id="shadow" class="navbar-brand typewriter" href="index.html">The Everyday <br> Coder Project</a>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="resources.html">
+                            <i id="icon" class="fa fa-cloud" aria-hidden="true"></i>
+                            <h6 href="resources.html">An Everyday Project Organization</h6>
+                        </a>
+                    </td>
+                </tr>
+            </table>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li id="nav" class="nav-item">
-                        <a class="nav-link" href="#">Schedule</a>
+                        <a class="nav-link" href="schedule.html">Schedule</a>
                     </li>
                     <li id="nav" class="nav-item">
                         <a class="nav-link ml-5" href="resources.html">Resources</a>
                     </li>
                     <li id="nav" class="nav-item">
-                        <a class="nav-link ml-5" href="#">Donate</a>
+                        <a class="nav-link ml-5" href="donate.html">Donate</a>
                     </li>
                 </ul>
             </div>
@@ -45,10 +59,10 @@
     <main>
         <section class="hero">
             <img class="img-fluid" src="tecp-images/liquid.jpg" alt="" style="min-width: 1200px">
-            <div id="main-scroll" class="hero-text disappear pop">
-                <h1 class="fade" style="text-shadow: 2px 2px white; animation-delay: 1.5s;">Welcome to the Everyday Coder Project!</h1>
-                <h6 class="typewriter" style="animation-delay: 2s;">Code the future with us.</h6>
-                <a class="btn btn-main mt-1 fade" style="width:20%; float:right; animation-delay: 3.8s;" href="signup.html">Sign Up</a>
+            <div id="main-scroll" class="hero-text">
+                <h1 class="fade" style="text-shadow: 2px 2px white; animation-delay: 2s;">Welcome to the Everyday Coder Project!</h1>
+                <h5 class="typewriter2" style="animation-delay: 2.5s;">Code the future with us.</h5>
+                <a class="btn btn-main mt-1 fade" style="width:20%; float:right; animation-delay: 4.3s;" href="signup.html">Sign Up</a>
             </div>
         </section>
     </main>
@@ -141,15 +155,8 @@
             <div class="row py-2">
                 <div>
                     <button class="btn btn-main mb-2" onclick="typeWriter()">Read the Letter</button>
-                    <p id="letter"></p>
-
-                    <!--<h6 class="letter">As college students, we have lived the sweet journey of trying to learn something new as a kid and steadily turning it into the hand-made reality of today. As we direct this passion to other outlets, we found that teaching programming
-                        for free is the project we've been looking for. This is The Everyday Coder Project, where our endless interest of coding will be passed on to the future of programming.
-                        <br> <br> Code the future with us,
-                        <br> Pranav Pradeep
-                        <br> Founder
-                    </h6>-->
-                    <a class="btn btn-main-end mt-1" href="#">Sign Up</a>
+                    <p id="letter" style="text-indent: 3rem;"></p>
+                    <a class="btn btn-main-end mt-1" href="signup.html">Sign Up</a>
                 </div>
             </div>
         </div>
@@ -158,28 +165,21 @@
     <!--Footer-->
     <footer>
         <nav class="navbar navbar-light mt-3">
-            <container class="display-1" style="list-style-type:none; font-size:1.3rem; line-height:27px">
-                <a href="index.html">Home</a>
-                <a href="signup.html" style="padding-left:1em">Sign Up</a>
-                <a href="#" style="padding-left:1em">Schedule</a>
-                <a href="resources.html" style="padding-left:1em">Resources</a>
-                <a href="#" style="padding-left:1em">Donate</a>
-            </container>
-            <container class="display-1" style="list-style-type:none; font-size:1em">
-                <li><b style="font-weight: 900; ">Contact:</b> pradeep. pranav2020@gmail.com</li>
-            </container>
+            <a href="index.html">Home</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="resources.html">Resources</a>
+            <a href="donate.html">Donate</a>
+        </nav>
+        <nav>
+            <div class="attribution text-center pt-1 pb-3">
+                <span>The Everyday Project Foundation &copy; 2020. All rights reserved.</span>
+                <span>Background vector created by s.salvador - www.freepik.com</span>
+            </div>
         </nav>
     </footer>
 
-    <nav>
-        <div class="attribution text-center pt-1 pb-3">
-            <span>The Everyday Coder Project Foundation &copy; 2020. All rights reserved.</span>
-            <span>Background vector created by s.salvador - www.freepik.com</span>
-        </div>
-    </nav>
-
     <!--JS-->
-
     <script>
         window.onscroll = function() {
             handleScroll();

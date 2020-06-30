@@ -1,0 +1,256 @@
+body {
+    font-family: 'Bungee', sans-serif;
+}
+
+a {
+    color: midnightblue;
+}
+
+a:hover {
+    color: rgb(255, 102, 102);
+}
+
+body,
+html {
+    height: 100%;
+}
+
+
+/*@media only screen and (max-width: 500px) {
+    .disappear {
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .appear {
+        visibility: visible;
+    }
+} 
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+} */
+
+
+/*Header*/
+
+.navbar {
+    text-transform: uppercase;
+}
+
+.navbar-brand {
+    font-family: 'Bungee', cursive;
+    font-size: 2.5rem;
+    line-height: 2.3rem;
+    color: white;
+}
+
+.nav-item {
+    font-size: 2rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#icon {
+    font-size: 1.2rem;
+    float: left;
+    margin-right: 0.5em;
+    color: white;
+}
+
+h6 {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+}
+
+
+/*Main*/
+
+.hero {
+    position: relative;
+}
+
+.hero-text {
+    position: absolute;
+    width: 40rem;
+    color: rgb(0, 132, 255);
+    margin-top: -40%;
+    margin-bottom: 20%;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+.fade {
+    animation: fadeIn ease 0.7s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.btn-main {
+    color: white;
+    background-color: rgb(0, 162, 255);
+    font-size: 1.2rem;
+    font-weight: 550;
+}
+
+.btn-main:hover {
+    background-color: white;
+    color: rgb(0, 162, 255);
+}
+
+.typewriter {
+    opacity: 0;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0;
+    animation: typing 2s steps(30, end), blink-caret .8s step-end infinite;
+    animation-delay: 0.7s;
+}
+
+.typewriter2 {
+    opacity: 0;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0;
+    animation: typing 4s steps(45, end), blink-caret .8s step-end infinite;
+    animation-delay: 0.7s;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+        opacity: 1;
+        border-color: transparent;
+    }
+    50% {
+        border-color: SmokyWhite;
+    }
+}
+
+.parallax {
+    background-image: url("tecp-images/signup-end.jpg");
+    height: 80%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}*/
+
+
+/*Programming Paths*/
+
+.pp-background {
+    background-color: rgb(210, 255, 255);
+    border-top: 5px solid white;
+}
+
+.section-heading {
+    color: rgb(0, 162, 255);
+}
+
+.sub {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.details {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.7rem;
+}
+
+
+/*Team*/
+
+.team-background {
+    background-color: rgb(137, 255, 157);
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+}
+
+.section-heading-team {
+    color: rgb(28, 121, 0);
+}
+
+
+/*Sign Up*/
+
+#letter {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.6rem;
+}
+
+.signup-background {
+    background-color: rgb(255, 169, 154);
+    border-top: 5px solid white;
+}
+
+.letter {
+    font-family: monospace;
+    padding-left: 15px;
+    font-size: 1.5rem;
+    text-indent: 3rem;
+    line-height: 2.2rem;
+}
+
+.btn-main-end {
+    color: white;
+    background-color: rgb(255, 0, 0);
+    font-size: 1.2rem;
+    font-weight: 550;
+    width: 15rem;
+}
+
+.btn-main-end:hover {
+    background-color: white;
+    color: rgb(255, 0, 0);
+}
+
+
+/*Footer*/
+
+footer {
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: 'Quicksand', sans-serif;
+    background-color: white;
+}
+
+.attribution {
+    font-family: 'Quicksand', sans-serif;
+    color: gray;
+    opacity: 0.5;
+}
