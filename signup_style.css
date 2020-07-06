@@ -1,40 +1,101 @@
-body {
-    font-family: 'Bungee', sans-serif;
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
 }
 
-a {
-    color: black;
+html {
+    cursor: url(tecp-images/circumpunct.png), auto;
 }
 
 a:hover {
-    color: rgb(22, 187, 187);
+    cursor: url(tecp-images/circumpunct.png), auto;
+    color: rgb(162, 19, 228);
+    text-decoration: none;
 }
 
-body,
-html {
-    height: 100%;
+#front {
+    cursor: none;
 }
 
-img {
-    min-width: 1200px;
-    top: 0;
-    left: 0
+#front2 {
+    cursor: none
 }
 
+main {
+    height: 100vh;
+}
 
-/*Header*/
+@media only screen and (min-width: 601px) {
+    .navbar-brand {
+        font-size: 2.7em;
+        line-height: 1em;
+    }
+    #front {
+        height: 80px;
+        font-size: 2.7em;
+        font-family: 'Bungee', sans-serif;
+        padding-top: 0.2em;
+        margin-top: 200px;
+    }
+    #front2 {
+        height: 80px;
+        font-size: 2.7em;
+        font-family: 'Bungee', sans-serif;
+        padding-top: 0.2em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #front {
+        height: 200px;
+        font-size: 2.7em;
+        font-family: 'Bungee', sans-serif;
+        padding-top: 0.2em;
+        margin-top: 150px;
+    }
+    .but1 {
+        width: 100%;
+    }
+    #front2 {
+        height: 200px;
+        font-size: 2.6em;
+        font-family: 'Bungee', sans-serif;
+        padding-top: 1em;
+    }
+    .navbar-brand {
+        font-size: 1.4em;
+        line-height: 1em;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #menu {
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #menu {
+        color: white;
+    }
+}
 
 .navbar {
     text-transform: uppercase;
-    background-color: rgba(135, 206, 250, 0.356);
+    background-color: transparent;
+    z-index: 10000;
+    height: auto;
 }
 
 .navbar-brand {
     font-family: 'Bungee', cursive;
-    font-size: 2.5rem;
-    line-height: 2.3rem;
-    color: rgb(28, 0, 184);
-    text-shadow: -1px 1px white;
+    color: white;
 }
 
 .nav-item {
@@ -42,25 +103,151 @@ img {
     font-family: 'Quicksand', sans-serif;
 }
 
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.856);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
 
-/*Main*/
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
 
-main {
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Bungee', sans-serif;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #ff0000;
+}
+
+.overlay .closebtn {
     position: absolute;
-    margin-top: -47%;
-    margin-bottom: 5%;
-    margin-left: 21%;
-    margin-right: 19%;
-    padding: 1em;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+.cursor {
+    cursor: url(tecp-images/circumpunct.png), auto;
+}
+
+@keyframes length {
+    from {
+        width: 0
+    }
+    to {
+        width: 60%
+    }
+}
+
+.length-change {
+    animation: length ease 0.7s;
+    animation-fill-mode: forwards;
+}
+
+.but1 {
+    color: rgb(0, 162, 255);
+    background-color: white;
+    font-size: 1.2rem;
+    font-weight: 550;
+    margin: 0%;
+    width: 60%;
+}
+
+.but1:hover {
+    background-color: black;
+    color: rgb(220, 240, 40);
+}
+
+.but2 {
+    color: white;
+    background-color: rgb(0, 162, 255);
+    font-size: 1.2rem;
+    font-weight: 550;
+    margin: 0%;
+    width: 60%;
+    cursor: url(tecp-images/circumpunct.png), auto;
+    float: right;
+}
+
+.but2:hover {
+    background-color: black;
+    color: red;
+}
+
+#front {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 100px;
+}
+
+#front2 {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 100px;
+}
+
+#back {
+    z-index: -1000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, aqua, rgb(36, 119, 167));
+}
+
+#front:hover+#back {
+    background-image: linear-gradient(to right, rgb(220, 240, 40), rgb(120, 129, 134));
+}
+
+#back2 {
+    z-index: -1000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
 }
 
-
-/*Footer*/
+#front2:hover+#back2 {
+    background-image: linear-gradient(to right, rgb(120, 129, 134), red);
+}
 
 footer {
     padding-left: 10%;
     padding-right: 10%;
+    padding-top: 1px;
     font-family: 'Quicksand', sans-serif;
     background-color: white;
 }

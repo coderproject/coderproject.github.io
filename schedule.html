@@ -41,14 +41,24 @@
                     </li>
                 </ul>
             </div>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="schedule.html">Schedule</a>
+                    <a href="resources.html">Resources</a>
+                    <a href="donate.html">Donate</a>
+                </div>
+            </div>
+            <span id="menu" class="fa fa-bars fa-2x" onclick="openNav()"></span>
         </div>
     </nav>
 
     <!--Main-->
     <main>
         <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=bDRsdWE1Ymdvcjg0bGwwazRmanZlNXBpNDhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23E67C73&amp;color=%230B8043&amp;showTitle=1"
-            style="border:solid 1px #777" width="800" height="650" frameborder="0" scrolling="no"></iframe>
+            style="border:solid 1px #777" frameborder="0" scrolling="no"></iframe>
     </main>
+
 
     <!--Footer-->
     <footer>
@@ -61,10 +71,23 @@
         </nav>
         <nav>
             <div class="attribution text-center pt-1 pb-3">
-                <span>The Everyday Project Foundation &copy; 2020. All rights reserved.</span>
+                <span>The Everyday Project Foundation &copy; 2020.</span>
             </div>
         </nav>
     </footer>
+
+    <!--JS-->
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+
+
 </body>
 
 

@@ -8,11 +8,16 @@ a {
 
 a:hover {
     color: rgb(22, 187, 187);
+    cursor: url(tecp-images/circumpunct.png), auto;
+}
+
+#cursor {
+    cursor: url(tecp-images/circumpunct.png), auto;
 }
 
 body,
 html {
-    height: 100%;
+    cursor: url(tecp-images/circumpunct.png), auto;
 }
 
 img {
@@ -41,23 +46,132 @@ img {
     font-family: 'Quicksand', sans-serif;
 }
 
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.856);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Bungee', sans-serif;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #ff0000;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar-brand {
+        font-size: 1.4em;
+        line-height: 1em;
+    }
+    main {
+        padding-top: 115px;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .navbar-brand {
+        font-size: 2.5rem;
+        line-height: 1em;
+    }
+    main {
+        padding-top: 140px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #menu {
+        visibility: hidden;
+    }
+}
+
 
 /*Main*/
 
 main {
     position: absolute;
-    margin-top: -58%;
-    margin-bottom: 5%;
-    margin-left: 18%;
-    margin-right: 22%;
-    padding: 1em;
-    height: 100%;
+    top: 0;
+    left: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+}
+
+main iframe {
+    width: 100%;
+}
+
+@media only screen and (min-width: 601px) {
+    main iframe {
+        height: 110vh;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    main iframe {
+        height: 80vh;
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+    head,
+    main,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
 }
 
 
 /*Footer*/
 
 footer {
+    position: absolute;
+    width: 100%;
     padding-left: 10%;
     padding-right: 10%;
     font-family: 'Quicksand', sans-serif;

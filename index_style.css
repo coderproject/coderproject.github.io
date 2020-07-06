@@ -8,25 +8,14 @@ a {
 
 a:hover {
     color: rgb(255, 102, 102);
+    cursor: url(tecp-images/circumpunct.png), auto;
 }
 
 body,
 html {
     height: 100%;
+    cursor: url(tecp-images/circumpunct.png), auto;
 }
-
-
-/*@media only screen and (max-width: 500px) {
-    .disappear {
-        visibility: hidden;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .appear {
-        visibility: visible;
-    }
-} 
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
@@ -37,13 +26,15 @@ only screen and (min-device-pixel-ratio: 1.5) {
         width: 100%;
         overflow-x: hidden;
     }
-} */
+}
 
 
 /*Header*/
 
 .navbar {
     text-transform: uppercase;
+    z-index: 10000;
+    height: auto;
 }
 
 .navbar-brand {
@@ -70,6 +61,64 @@ h6 {
     color: white;
 }
 
+.fa-bars {
+    color: white;
+    margin-top: -40px;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.856);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #ff0000;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
 
 /*Main*/
 
@@ -79,17 +128,106 @@ h6 {
 
 .hero-text {
     position: absolute;
-    width: 40rem;
+    top: 0;
+    left: 0;
     color: rgb(0, 132, 255);
-    margin-top: -40%;
-    margin-bottom: 20%;
-    margin-right: 20%;
-    margin-left: 20%;
 }
 
 .fade {
     animation: fadeIn ease 0.7s;
     animation-fill-mode: forwards;
+}
+
+@media only screen and (min-width: 601px) {
+    .font-change {
+        font-size: 56px;
+        margin-top: 130px;
+    }
+    .hero-text {
+        padding-left: 17%;
+        padding-right: 17%;
+        padding-top: 5%;
+    }
+    .ppbtn {
+        width: 23%;
+    }
+    .svg1 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .font-change {
+        font-size: 35px;
+        margin-top: 200px;
+    }
+    .navbar-brand {
+        font-size: 1.4em;
+        line-height: 1em;
+    }
+    .hero-text {
+        padding-left: 7%;
+        padding-right: 7%;
+        padding-top: 20%;
+    }
+    .tag {
+        font-size: 0.9em;
+    }
+    .sub {
+        margin-top: 2em;
+    }
+    .details {
+        margin-top: 0.5em;
+    }
+    .ppbtn {
+        width: 100%;
+    }
+    .section-heading {
+        font-size: 1.7em;
+    }
+    .svg2 {
+        display: none;
+    }
+    .end {
+        margin-left: 1em;
+    }
+    #letter {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #menu {
+        visibility: hidden;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .font-change2 {
+        font-size: 36px;
+        animation: typing 4s steps(45, end), blink-caret .8s step-end infinite;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .font-change2 {
+        font-size: 20px;
+        animation: typing 2.5s steps(45, end), blink-caret .8s step-end infinite;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .size-change {
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .size-change {
+        width: 40%;
+        margin-top: 2em;
+    }
 }
 
 @keyframes fadeIn {
@@ -119,18 +257,11 @@ h6 {
     border-right: .15em solid orange;
     white-space: nowrap;
     margin: 0;
-    animation: typing 2s steps(30, end), blink-caret .8s step-end infinite;
-    animation-delay: 0.7s;
+    animation-delay: 1s;
 }
 
-.typewriter2 {
-    opacity: 0;
-    overflow: hidden;
-    border-right: .15em solid orange;
-    white-space: nowrap;
-    margin: 0;
-    animation: typing 4s steps(45, end), blink-caret .8s step-end infinite;
-    animation-delay: 0.7s;
+#cursor {
+    cursor: url(tecp-images/circumpunct.png), auto;
 }
 
 @keyframes typing {
@@ -153,28 +284,13 @@ h6 {
     }
 }
 
-.parallax {
-    background-image: url("tecp-images/signup-end.jpg");
-    height: 80%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-/*@media only screen and (max-device-width: 1366px) {
-    .parallax {
-        background-attachment: scroll;
-    }
-}*/
-
 
 /*Programming Paths*/
 
 .pp-background {
     background-color: rgb(210, 255, 255);
     border-top: 5px solid white;
+    border-bottom: 5px solid white;
 }
 
 .section-heading {
@@ -231,7 +347,7 @@ h6 {
     background-color: rgb(255, 0, 0);
     font-size: 1.2rem;
     font-weight: 550;
-    width: 15rem;
+    width: 13rem;
 }
 
 .btn-main-end:hover {

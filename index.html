@@ -22,19 +22,19 @@
 <body>
 
     <!--Header-->
-    <nav id="header" class="fixed-top navbar navbar-expand-lg">
+    <nav id="nav" class="fixed-top navbar navbar-expand-lg">
         <div class="container p-2">
             <table>
                 <tr>
                     <th>
-                        <a id="shadow" class="navbar-brand typewriter" href="index.html">The Everyday <br> Coder Project</a>
+                        <a id="shadow" class="navbar-brand" href="index.html">The Everyday <br> Coder Project</a>
                     </th>
                 </tr>
                 <tr>
                     <td>
                         <a href="https://everydayproject.github.io/">
                             <i id="icon" class="fa fa-cloud" aria-hidden="true"></i>
-                            <h6>An Everyday Project Organization</h6>
+                            <h6 class="tag">An Everyday Project Organization</h6>
                         </a>
                     </td>
                 </tr>
@@ -52,17 +52,26 @@
                     </li>
                 </ul>
             </div>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="schedule.html">Schedule</a>
+                    <a href="resources.html">Resources</a>
+                    <a href="donate.html">Donate</a>
+                </div>
+            </div>
+            <span id="menu" class="fa fa-bars fa-2x" onclick="openNav()"></span>
         </div>
     </nav>
 
     <!--Main-->
     <main>
         <section class="hero">
-            <img class="img-fluid" src="tecp-images/liquid.jpg" alt="" style="min-width: 1200px">
+            <img class="img-fluid" src="tecp-images/liquid.jpg" alt="" style="min-width: 1200px; width: 100%; height: 100vh">
             <div id="main-scroll" class="hero-text">
-                <h1 class="fade" style="text-shadow: 2px 2px white; animation-delay: 2s;">Welcome to the Everyday Coder Project!</h1>
-                <h5 class="typewriter2" style="animation-delay: 2.5s;">Code the future with us.</h5>
-                <a class="btn btn-main mt-1 fade" style="width:20%; float:right; animation-delay: 4.3s;" href="signup.html">Sign Up</a>
+                <h1 class="fade font-change" style="text-shadow: 2px 2px white; animation-delay: 0.5s;">Welcome to the Everyday Coder Project!</h1>
+                <h5 class="typewriter font-change2">Code the future with us.</h5>
+                <a id="cursor" class="btn btn-main fade size-change" style="float:right; animation-delay: 3.3s;" href="signup.html">Sign Up</a>
             </div>
         </section>
     </main>
@@ -78,16 +87,19 @@
                 <div class="col-md-8">
                     <h2 class="sub">Web Development Path</h2>
                     <p class="details">From HTML and CSS to JavaScript and Bootstrap, we will explore the world of web development.</p>
-                    <a class="btn btn-main mt-1" style="width:23%" href="#">Learn more</a>
+                    <a id="cursor" class="btn btn-main mt-1 ppbtn" href="#">Learn more</a>
                 </div>
             </div>
             <div class="row py-5">
+                <div class="col-md-4 svg1">
+                    <img src="tecp-images/python.svg" alt="" style="width: 20rem">
+                </div>
                 <div class="col-md-8">
                     <h2 class="sub mr-5 pr-5">Python Path</h2>
                     <p class="details">Python is the language of the future. <br> Join us in learning python and exploring the worlds of machine learning and artificial intelligence.</p>
-                    <a class="btn btn-main mt-1" style="width:23%" href="#">Learn more</a>
+                    <a id="cursor" class="btn btn-main mt-1 ppbtn" href="#">Learn more</a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 svg2">
                     <img src="tecp-images/python.svg" alt="" style="width: 20rem">
                 </div>
             </div>
@@ -100,9 +112,9 @@
         <div class="container">
             <h2 class="section-heading-team">The Team</h2>
             <div class="row my-3">
-                <div class="col-md-4">
-                    <article class="shadow p-0" style="background-color: whitesmoke; border-top:0.3em solid black; border-bottom:0.3em solid black">
-                        <img class="img-fluid" alt="" src="tecp-images/me.JPG" style="border-bottom:0.7em solid slategray">
+                <div class="col-md-4 mt-3">
+                    <article class="shadow p-0" style="background-color: whitesmoke">
+                        <img class="img-fluid" alt="" src="tecp-images/me.JPG">
                         <div class="sub p-3">
                             <h3>Pranav Pradeep</h3>
                             <p>Founder of TECP. <br> //</p>
@@ -114,9 +126,9 @@
                         </div>
                     </article>
                 </div>
-                <div class="col-md-4">
-                    <article class="shadow p-0" style="background-color: whitesmoke; border-top:0.3em solid black; border-bottom:0.3em solid black">
-                        <img class="img-fluid" alt="" src="tecp-images/propic.png" style="border-bottom:0.7em solid slategray">
+                <div class="col-md-4 mt-3">
+                    <article class="shadow p-0" style="background-color: whitesmoke">
+                        <img class="img-fluid" alt="" src="tecp-images/propic.png">
                         <div class="sub p-3">
                             <h3>//</h3>
                             <p>//</p> <br>
@@ -128,9 +140,9 @@
                         </div>
                     </article>
                 </div>
-                <div class="col-md-4">
-                    <article class="shadow p-0" style="background-color: whitesmoke; border-top:0.3em solid black; border-bottom:0.3em solid black">
-                        <img class="img-fluid" alt="" src="tecp-images/propic.png" style="border-bottom:0.7em solid slategray">
+                <div class="col-md-4 mt-3">
+                    <article class="shadow p-0" style="background-color: whitesmoke">
+                        <img class="img-fluid" alt="" src="tecp-images/propic.png">
                         <div class="sub p-3">
                             <h3>//</h3>
                             <p>//</p> <br>
@@ -146,17 +158,15 @@
         </div>
     </section>
 
-    <div class="parallax"></div>
-
     <!--Sign Up-->
     <section class="signup-background py-5">
         <div class="container">
             <h2>Join Us!</h2>
             <div class="row py-2">
                 <div>
-                    <button class="btn btn-main mb-2" onclick="typeWriter()">Read the Letter</button>
-                    <p id="letter" style="text-indent: 3rem;"></p>
-                    <a class="btn btn-main-end mt-1" href="signup.html">Sign Up</a>
+                    <button id="cursor" class="btn btn-main end mb-2" onclick="typeWriter()">Read the Letter</button>
+                    <p id="letter" style="text-indent: 3rem"></p>
+                    <a id="cursor" class="btn btn-main-end end mt-1" href="signup.html">Sign Up</a>
                 </div>
             </div>
         </div>
@@ -173,34 +183,27 @@
         </nav>
         <nav>
             <div class="attribution text-center pt-1 pb-3">
-                <span>The Everyday Project Foundation &copy; 2020. All rights reserved.</span>
+                <span>The Everyday Project Foundation &copy; 2020.</span>
                 <span>Background vector created by s.salvador - www.freepik.com</span>
             </div>
         </nav>
     </footer>
 
     <!--JS-->
-    <script>
-        window.onscroll = function() {
-            handleScroll();
-        }
 
-        function handleScroll() {
-            if (document.documentElement.scrollTop > 35) {
-                document.getElementById("header").style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-                document.getElementById("shadow").style.textShadow = "1px 1px black";
-                document.getElementById("main-scroll").style.position = "absolute";
-            } else {
-                document.getElementById("header").style.backgroundColor = "transparent";
-                document.getElementById("shadow").style.textShadow = "0px 0px black";
-                document.getElementById("main-scroll").style.position = "fixed";
-            }
-        }
-    </script>
 
     <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+
+
         var i = 0;
-        var txt = "As college students, we have lived the sweet journey of trying to learn something new as a kid and steadily turning it into the hand-made reality of today. As we direct this passion to other outlets, we found that teaching programming for free is the project we've been looking for. This is The Everyday Coder Project, where our endless interest of coding will be passed on to the future of programming. Code the future with us-- Pranav Pradeep, Founder";
+        var txt = "As college students, we have lived the sweet journey of trying to learn something new as a kid and steadily turning it into the hand-made reality of today. As we direct this passion to other outlets, we found that teaching programming to absolute beginners for free is the project we've been looking for. This is The Everyday Coder Project, where our endless interest of coding will be passed on to the future of programming. Code the future with us-- Pranav Pradeep, Founder";
         var speed = 40;
 
         function typeWriter() {
@@ -208,6 +211,20 @@
                 document.getElementById("letter").innerHTML += txt.charAt(i);
                 i++;
                 setTimeout(typeWriter, speed);
+            }
+        }
+    </script>
+
+    <script>
+        window.onscroll = function() {
+            handleScroll();
+        }
+
+        function handleScroll() {
+            if (document.documentElement.scrollTop > 35) {
+                document.getElementsByClassName("navbar").style.backgroundColor = "white";
+            } else {
+                document.getElementsByClassName("navbar").style.backgroundColor = "red";
             }
         }
     </script>
