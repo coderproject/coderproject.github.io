@@ -197,6 +197,13 @@ h6 {
     }
 }
 
+@media (min-width: 1281px) {
+    .font-change {
+        font-size: 80px;
+        margin-top: 200px;
+    }
+}
+
 @media only screen and (min-width: 1000px) {
     #menu {
         visibility: hidden;
